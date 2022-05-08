@@ -1,0 +1,75 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{longtable}
+\usepackage[breaklinks=true]{hyperref}
+
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+    \usepackage{lscape}     
+    \usepackage{amsmath}
+       
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\def\inputGnumericTable{}
+
+\bibliographystyle{IEEEtran}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+
+\newcommand{\question}{\noindent \textbf{Question: }}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+
+\title{Assignment 6}
+\author{MANIKANTA UPPULAPU (BT21BTECH11005)}
+
+\begin{document}
+    % make the title area
+    \maketitle  
+    
+    \question If P(A) = 1/2, P(B) = 0, then P (A/B) is
+    \begin{enumerate}
+        \item 0 
+        \item 1/2
+        \item not defined
+        \item 1
+    \end{enumerate}
+    
+    \solution 
+     If $X$ and $Y$ are two events in a sample space $S$, then The Conditional Probability of $X$ given $Y$ is defined as
+        \begin{align}
+        \label{1}  \pr{X \mid Y} &= \frac{\pr{X \cap Y}}{\pr{Y}}  
+        \end{align}
+        Given, $A$ and $B$ are the events such that :
+        %inserting the "Table" from "Tables" folder
+        \begin{table}[ht!]
+        \centering
+           \input{tables/table}
+        \caption{Given Data}
+	        \label{Tables:Table}
+        \end{table}
+        \begin{enumerate}
+             Using \eqref{1},
+            \begin{align}
+                &\pr{A \mid B} = \frac{\pr{A \cap B}}{\pr{B}}\label{2} \\
+                \implies &\pr{A \mid B} = \frac{{\pr{A \cap B}}}{{0}}\label{3} \\
+                \implies &\fbox{\pr{A \mid B} = \text{not defined}}\label{4} 
+            \end{align}
+            \end{enumerate}
+            \end{document}
