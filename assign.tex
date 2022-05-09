@@ -54,21 +54,21 @@ columns=fullflexible
     \solution 
      If $X$ and $Y$ are two events in a sample space $S$, then The Conditional Probability of $X$ given $Y$ is defined as
         \begin{align}
-        \label{1}  \pr{X \mid Y} &= \frac{\pr{X \cap Y}}{\pr{Y}}  
+        \label{1}  \pr{X \mid Y} &= \frac{\pr{XY}}{\pr{Y}}  
         \end{align}
         Given, $A$ and $B$ are the events such that :
         %inserting the "Table" from "Tables" folder
         \begin{table}[ht!]
         \centering
-           \input{tables/table}
+           \input{Table}
         \caption{Given Data}
 	        \label{Tables:Table}
         \end{table}
         \begin{enumerate}
              Using \eqref{1},
             \begin{align}
-                &\pr{A \mid B} = \frac{\pr{A \cap B}}{\pr{B}}\label{2} \\
-                \implies &\pr{A \mid B} = \frac{{\pr{A \cap B}}}{{0}}\label{3} \\
+                &\pr{A \mid B} = \frac{\pr{AB}}{\pr{B}}\label{2} \\
+                \implies &\pr{A \mid B} = \frac{{\pr{AB}}}{{0}}\label{3} \\
                 \implies &\fbox{\pr{A \mid B} = \text{not defined}}\label{4} 
             \end{align}
             \end{enumerate}
