@@ -1,4 +1,4 @@
-#let P(A intersection B)= p_a_b
+#let P(AB)= p_a_b
 #let P(B)=b
 #let P(A/B)= c
 import random
